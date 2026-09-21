@@ -89,7 +89,6 @@
         <li><div class="insight-icon" style="background: #2e7d32; width: 20px; height: 20px; font-size: 10px;">&#10003;</div><div><strong>Pricing flexibility</strong> — range (e.g. £3-6), not fixed. AI decides within range</div></li>
         <li><div class="insight-icon" style="background: #2e7d32; width: 20px; height: 20px; font-size: 10px;">&#10003;</div><div><strong>Voice stack</strong> (Discover/RetainX), not digital APIs</div></li>
         <li><div class="insight-icon" style="background: #2e7d32; width: 20px; height: 20px; font-size: 10px;">&#10003;</div><div><strong>ID&V-verified, on-phone only</strong> — no digital UI during voice</div></li>
-        <li><div class="insight-icon" style="background: #2e7d32; width: 20px; height: 20px; font-size: 10px;">&#10003;</div><div><strong>Kahlo</strong> (modular L8 pricing) lands Oct 2026 — Sierra builds on new front book</div></li>
         <li><div class="insight-icon" style="background: #2e7d32; width: 20px; height: 20px; font-size: 10px;">&#10003;</div><div><strong>SOP v1.0</strong> passed operational review — 21 journeys, 61 knowledge articles</div></li>
         <li><div class="insight-icon" style="background: #2e7d32; width: 20px; height: 20px; font-size: 10px;">&#10003;</div><div><strong>Regulatory approved</strong> — AI can negotiate within guardrails. "Freedom within a framework." Commercial rules need regulatory sign-off.</div></li>
       </ul>
@@ -180,7 +179,7 @@
     </tr>
     <tr>
       <td><strong>MVP: Broadband upsell</strong></td>
-      <td>Broadband speed upgrade is the simplest starting point. Front book uplift is £6. Post-Kahlo: modular step pricing enables more flexibility. If the customer wants something more complex, transfer to human.</td>
+      <td>Broadband speed upgrade is the simplest starting point. If the customer wants something more complex, transfer to human.</td>
       <td>James Brown + Wilfrid</td>
     </tr>
     <tr>
@@ -208,12 +207,12 @@
   <div class="slide-number">3 / 6</div>
 </div>
 
-<!-- SLIDE 4: The Negotiation Model + Kahlo -->
+<!-- SLIDE 4: The Negotiation Model -->
 <div class="slide">
   <div class="top-bar bar-blue"></div>
   <div class="q-label" style="color: #283593;">How Sierra Sells</div>
-  <h1>The negotiation model — and how Kahlo enables it</h1>
-  <p class="subtitle">Steps 1-2 confirmed with pricing range. Post-Kahlo modular pricing makes this work. Steps 3-5 stay with human agents.</p>
+  <h1>The negotiation model</h1>
+  <p class="subtitle">Steps 1-2 confirmed with pricing range. Commercial Engine API provides the offers and pricing. Steps 3-5 stay with human agents.</p>
 
   <table class="clean" style="margin-bottom: 16px;">
     <tr><th style="width: 36px;">#</th><th style="width: 130px;">Position</th><th>What Sierra does</th><th style="width: 110px;">Revenue</th><th style="width: 100px;">Status</th></tr>
@@ -248,18 +247,16 @@
   <div class="two-col">
     <div class="col">
       <div class="callout" style="background: #e3f2fd; border-left: 4px solid #283593;">
-        <strong style="color: #283593;">Kahlo enables this (October 2026)</strong><br>
-        Modular L8 pricing replaces rigid L1 bundles. Each component priced independently with stackable discounts.<br><br>
-        <strong>Broadband step pricing:</strong><br>
-        M125 £20 → M250 £24 → M350 £28 → M500 £32 → Gig1 £36 → Gig2 £40<br><br>
-        Upgrade conversation: "£4-8 more per month" — Sierra picks within the range. Pre-Kahlo bundles service-protected 12 days post-launch.
+        <strong style="color: #283593;">Commercial Engine provides the offers</strong><br>
+        Sierra consumes a Commercial Engine API endpoint — same model as online. Segmentation, pricing, and offer selection are hidden behind the API.<br><br>
+        Sierra receives multiple offers with a pricing range and uses the conversation + customer data to select the best one for the customer.
       </div>
     </div>
     <div class="col">
       <div class="callout" style="background: #fff3e0; border-left: 4px solid #f57c00;">
         <strong style="color: #e65100;">The commercial opportunity</strong><br>
         Today: human agents go with the deepest discount 99% of the time. Upselling actually <em>loses</em> ~£7 ARPU because discounts wipe out the gain.<br><br>
-        With Sierra + Kahlo: AI leads with a higher price, flexes only if needed, and uses customer data to justify value. Smaller, proportional TLDs (&lt;15%). Upsells that make money.<br><br>
+        With Sierra: AI leads with a higher price, flexes only if needed, and uses customer data to justify value. Upsells that make money.<br><br>
         <strong>This is a test:</strong> does AI with data and pricing flexibility outperform human agents who default to max discount?
       </div>
     </div>
@@ -374,7 +371,6 @@
         <li>Early Life + In Life customers only</li>
         <li>Eligibility → offer (with range) → basket → billing impact → CIS/CSS → ICOMS order</li>
         <li>Pricing flexibility within £3-6 range</li>
-        <li>Post-Kahlo product catalogue</li>
         <li>Complex requests → transfer to human</li>
       </ul>
       <p style="margin-top: 6px;"><span class="tag tag-amber">Needs Gilles' CE endpoint</span></p>
@@ -394,7 +390,7 @@
   </div>
 
   <div class="callout" style="background: #f5f5f5; border-left: 4px solid #1a1a2e;">
-    <strong>Timeline:</strong> Phase 1 starts now. Kahlo lands October 2026 (new pricing). Regulatory approved. Architecture direction confirmed — Commercial Engine API, Gilles to build endpoint. Phase 2 depends on Gilles' build timeline. Target go-live: <strong>January 2027</strong>.
+    <strong>Timeline:</strong> Phase 1 starts now. Regulatory approved. Architecture direction confirmed — Commercial Engine API, Gilles to build endpoint. Phase 2 depends on Gilles' build timeline. Target go-live: <strong>January 2027</strong>.
   </div>
 
   <div class="slide-footer">Package Change — Stakeholder Update | Sep 2026</div>
