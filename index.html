@@ -97,7 +97,7 @@
     <div class="col">
       <h2 style="font-size: 16px; color: #c62828; margin-bottom: 10px;">Next Steps</h2>
       <ul class="insight-list" style="font-size: 13px;">
-        <li><div class="insight-icon" style="background: #c62828; width: 20px; height: 20px; font-size: 10px;">!</div><div><strong>Integration path</strong> — RetainX is 2+ years. Architecture reviewing interim options. Call next week with Rohan/Gilles/Paul.</div></li>
+        <li><div class="insight-icon" style="background: #f57c00; width: 20px; height: 20px; font-size: 10px;">&#8594;</div><div><strong>Integration path</strong> — Commercial Engine API confirmed as the approach (same as online). Gilles to build the endpoint. Sierra will be first consumer. Sync with Discover replacement (Moritz Pfeiffer) to align.</div></li>
         <li><div class="insight-icon" style="background: #f57c00; width: 20px; height: 20px; font-size: 10px;">?</div><div><strong>5 inputs Sierra needs</strong> — eligible offers, pricing range, product knowledge, customer data, guardrails. Architecture to confirm how Sierra gets them.</div></li>
         <li><div class="insight-icon" style="background: #f57c00; width: 20px; height: 20px; font-size: 10px;">?</div><div><strong>Pricing decision logic</strong> — Sierra vs DS model vs rules-based? Parallel question for Sierra/DS/Commercial.</div></li>
         <li><div class="insight-icon" style="background: #f57c00; width: 20px; height: 20px; font-size: 10px;">?</div><div><strong>Product knowledge layer</strong> — selling points, benefits, promotions. James Brown to confirm where this lives today.</div></li>
@@ -283,16 +283,17 @@
         AI can negotiate within guardrails — described as <strong>"freedom within a framework."</strong> Regulatory want voice parity (they dislike digital/voice divergence — call it "digital exclusion"). They believe AI will actually <em>improve</em> regulatory compliance vs human agents. Commercial rules need regulatory sign-off before go-live. SOP is the control framework.
       </div>
 
-      <h2 style="font-size: 16px; color: #c62828; margin-bottom: 12px;">Remaining Blocker</h2>
+      <h2 style="font-size: 16px; color: #f57c00; margin-bottom: 12px;">Integration Path — Direction Confirmed, Build Not Started</h2>
 
-      <div class="callout" style="background: #ffebee; border-left: 4px solid #c62828;">
-        <strong style="color: #c62828;">1. Integration path</strong><br>
-        Target architecture is RetainX CDO MSA (voice stack). But James Brown estimates RetainX is <strong>"at least 2 years away"</strong> (Maestro → Discover took 5-6 years and £20m+).<br><br>
-        Sierra needs an <strong>interim integration path</strong>. Options:<br>
-        &bull; Consume MDM / Discover APIs directly (voice stack, not digital)<br>
-        &bull; Use digital in-life store APIs as a bridge<br>
-        &bull; Build a lightweight service layer that can migrate to RetainX later<br><br>
-        <strong>Next step:</strong> Architecture session to decide interim path.
+      <div class="callout" style="background: #fff3e0; border-left: 4px solid #f57c00;">
+        <strong style="color: #e65100;">1. Integration path — direction confirmed, build not started</strong><br>
+        Architecture confirmed: Sierra will consume a <strong>Commercial Engine API endpoint</strong> — same model as online. Segmentation, offer selection, and pricing hidden behind the API. Gilles' team builds the endpoint; Sierra is the first consumer. RetainX will later consume the same endpoint for consistency.<br><br>
+        <strong>Digital Catalogue</strong> is being introduced for voice (new — Discover had its own). Offer IDs from the catalogue map to L codes for ICOMS fulfilment.<br><br>
+        <strong>Next steps:</strong><br>
+        &bull; Sync with Moritz Pfeiffer (Discover replacement project lead)<br>
+        &bull; Gilles' team to start building the Commercial Engine endpoint — TCS to open data front door request<br>
+        &bull; Sierra's requirements to feed into the Discover replacement project<br><br>
+        <strong>Risk:</strong> Gilles hasn't started building yet. The project hasn't officially submitted requirements to data. Sierra could be the catalyst to get this moving.
       </div>
     </div>
     <div class="col">
@@ -376,7 +377,7 @@
         <li>Post-Kahlo product catalogue</li>
         <li>Complex requests → transfer to human</li>
       </ul>
-      <p style="margin-top: 6px;"><span class="tag tag-amber">Needs integration path (architecture call next week)</span></p>
+      <p style="margin-top: 6px;"><span class="tag tag-amber">Needs Gilles' CE endpoint</span></p>
     </div>
     <div class="phase-box" style="background: #f5f5f5; border-color: #666;">
       <h3 style="color: #333;">Phase 3 — Expand</h3>
@@ -393,7 +394,7 @@
   </div>
 
   <div class="callout" style="background: #f5f5f5; border-left: 4px solid #1a1a2e;">
-    <strong>Timeline:</strong> Phase 1 starts now. Kahlo lands October 2026 (new pricing). Regulatory approved — AI can negotiate within guardrails. Phase 2 depends on integration path (architecture call next week). Target go-live: <strong>January 2027</strong>. One blocker remaining: interim integration path. RetainX is 2+ years — need a now solution.
+    <strong>Timeline:</strong> Phase 1 starts now. Kahlo lands October 2026 (new pricing). Regulatory approved. Architecture direction confirmed — Commercial Engine API, Gilles to build endpoint. Phase 2 depends on Gilles' build timeline. Target go-live: <strong>January 2027</strong>.
   </div>
 
   <div class="slide-footer">Package Change — Stakeholder Update | Sep 2026</div>
