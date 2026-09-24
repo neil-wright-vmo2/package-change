@@ -351,40 +351,106 @@
     </div>
   </div>
 
-  <div class="two-col">
+  <div class="two-col" style="margin-bottom: 20px;">
     <div class="col">
       <h2 style="font-size: 15px; margin-bottom: 10px;">MVP Scope</h2>
       <table class="clean">
         <tr><th>Dimension</th><th>MVP</th></tr>
         <tr><td>L3 Intent</td><td><strong>AddToPackage only</strong></td></tr>
         <tr><td>Journey</td><td><strong>Broadband upsell</strong></td></tr>
-        <tr><td>Customers</td><td><strong>Early Life + In Life</strong> (lifecycle scope being refined)</td></tr>
-        <tr><td>Offers</td><td>All eligible packages from CE — Sierra selects best fit</td></tr>
-        <tr><td>Pricing (Phase 1)</td><td>Single fixed price per package — no negotiation</td></tr>
-        <tr><td>Pricing (Phase 3)</td><td>One price adjustment if customer objects</td></tr>
-        <tr><td>Floor</td><td>Current package — never offer less than what they have</td></tr>
-        <tr><td>Downspin</td><td>Transfer to human — out of scope</td></tr>
+        <tr><td>Customers</td><td><strong>Early Life + In Life</strong> (being refined)</td></tr>
+        <tr><td>Pricing (Phase 1)</td><td>Fixed price per package — no negotiation</td></tr>
+        <tr><td>Floor</td><td>Current package — never less</td></tr>
+        <tr><td>Downspin</td><td>Transfer to human</td></tr>
       </table>
     </div>
     <div class="col">
-      <h2 style="font-size: 15px; margin-bottom: 10px;">Timeline</h2>
+      <h2 style="font-size: 15px; margin-bottom: 10px;">Status</h2>
       <table class="clean">
-        <tr><th>Milestone</th><th>When</th><th>Status</th></tr>
-        <tr><td>Commercial alignment</td><td>Sep 2026</td><td><span class="tag tag-green">Done</span></td></tr>
-        <tr><td>Regulatory approval</td><td>Sep 2026</td><td><span class="tag tag-green">Done</span></td></tr>
-        <tr><td>Architecture steer</td><td>Sep 2026</td><td><span class="tag tag-green">Done</span></td></tr>
-        <tr><td>CE endpoint confirmed</td><td>Sep 2026</td><td><span class="tag tag-green">Done</span></td></tr>
-        <tr><td>Discover replacement alignment</td><td>Oct 2026</td><td><span class="tag tag-amber">Next</span></td></tr>
-        <tr><td>Squad formation + funding</td><td>Oct 2026</td><td><span class="tag tag-amber">Next</span></td></tr>
-        <tr><td>CE endpoint build</td><td>Oct-Dec 2026</td><td><span class="tag tag-amber">Pending</span></td></tr>
-        <tr><td>Sierra integration + testing</td><td>Dec 2026</td><td><span class="tag tag-amber">Pending</span></td></tr>
-        <tr><td>Go-live</td><td><strong>Jan 2027</strong></td><td><span class="tag tag-blue">Target</span></td></tr>
+        <tr><td>Commercial</td><td><span class="tag tag-green">Aligned</span></td></tr>
+        <tr><td>Regulatory</td><td><span class="tag tag-green">Approved</span></td></tr>
+        <tr><td>Architecture</td><td><span class="tag tag-green">Confirmed</span></td></tr>
+        <tr><td>CE endpoint</td><td><span class="tag tag-green">Confirmed</span></td></tr>
+        <tr><td>Discover replacement alignment</td><td><span class="tag tag-amber">Oct</span></td></tr>
+        <tr><td>Squad + funding</td><td><span class="tag tag-amber">Oct</span></td></tr>
+        <tr><td>CE build</td><td><span class="tag tag-red">Not started</span></td></tr>
       </table>
     </div>
   </div>
 
+  <!-- Gantt Chart -->
+  <h2 style="font-size: 15px; margin-bottom: 8px;">Timeline</h2>
+  <svg width="1120" height="320" viewBox="0 0 1120 320" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
+    <!-- Month headers -->
+    <rect x="0" y="0" width="1120" height="30" fill="#f5f5f5" rx="4"/>
+    <text x="20" y="20" font-size="11" fill="#999" font-weight="600">SEP 2026</text>
+    <text x="200" y="20" font-size="11" fill="#999" font-weight="600">OCT 2026</text>
+    <text x="400" y="20" font-size="11" fill="#999" font-weight="600">NOV 2026</text>
+    <text x="600" y="20" font-size="11" fill="#999" font-weight="600">DEC 2026</text>
+    <text x="800" y="20" font-size="11" fill="#999" font-weight="600">JAN 2027</text>
+    <text x="1000" y="20" font-size="11" fill="#999" font-weight="600">FEB 2027</text>
+    
+    <!-- Grid lines -->
+    <line x1="190" y1="0" x2="190" y2="320" stroke="#eee" stroke-width="1"/>
+    <line x1="390" y1="0" x2="390" y2="320" stroke="#eee" stroke-width="1"/>
+    <line x1="590" y1="0" x2="590" y2="320" stroke="#eee" stroke-width="1"/>
+    <line x1="790" y1="0" x2="790" y2="320" stroke="#eee" stroke-width="1"/>
+    <line x1="990" y1="0" x2="990" y2="320" stroke="#eee" stroke-width="1"/>
+
+    <!-- Today marker -->
+    <line x1="160" y1="30" x2="160" y2="320" stroke="#c62828" stroke-width="2" stroke-dasharray="4,4"/>
+    <text x="162" y="44" font-size="10" fill="#c62828" font-weight="600">TODAY</text>
+
+    <!-- Row 1: Commercial / Reg / Arch alignment -->
+    <text x="20" y="72" font-size="12" fill="#333" font-weight="500">Commercial, Regulatory, Architecture</text>
+    <rect x="20" y="78" width="160" height="14" rx="7" fill="#2e7d32"/>
+    <text x="60" y="89" font-size="9" fill="#fff" font-weight="600">DONE</text>
+
+    <!-- Row 2: CE endpoint confirmed -->
+    <text x="20" y="112" font-size="12" fill="#333" font-weight="500">CE endpoint confirmed (Gilles)</text>
+    <rect x="120" y="118" width="60" height="14" rx="7" fill="#2e7d32"/>
+    <text x="130" y="129" font-size="9" fill="#fff" font-weight="600">DONE</text>
+
+    <!-- Row 3: Discover replacement alignment -->
+    <text x="20" y="152" font-size="12" fill="#333" font-weight="500">Discover replacement alignment (Moritz/Dave)</text>
+    <rect x="190" y="158" width="100" height="14" rx="7" fill="#f57c00"/>
+
+    <!-- Row 4: Squad formation + funding -->
+    <text x="20" y="192" font-size="12" fill="#333" font-weight="500">Squad formation + funding + data front door</text>
+    <rect x="210" y="198" width="120" height="14" rx="7" fill="#f57c00"/>
+
+    <!-- Row 5: CE endpoint build -->
+    <text x="20" y="232" font-size="12" fill="#333" font-weight="500">CE endpoint design + build</text>
+    <rect x="340" y="238" width="300" height="14" rx="7" fill="#283593"/>
+
+    <!-- Row 6: Test environment + accounts -->
+    <text x="20" y="262" font-size="12" fill="#333" font-weight="500">Test environment + test accounts setup</text>
+    <rect x="540" y="268" width="150" height="14" rx="7" fill="#6a1b9a"/>
+
+    <!-- Row 7: Integration testing + UAT -->
+    <text x="20" y="292" font-size="12" fill="#333" font-weight="500">Integration testing + UAT with Ops</text>
+    <rect x="690" y="298" width="200" height="14" rx="7" fill="#1565c0"/>
+
+    <!-- Go-live marker -->
+    <line x1="920" y1="30" x2="920" y2="320" stroke="#2e7d32" stroke-width="3"/>
+    <rect x="895" y="35" width="80" height="20" rx="4" fill="#2e7d32"/>
+    <text x="910" y="49" font-size="10" fill="#fff" font-weight="700">GO-LIVE</text>
+
+    <!-- Legend -->
+    <rect x="20" y="310" width="10" height="10" rx="2" fill="#2e7d32"/>
+    <text x="34" y="319" font-size="10" fill="#666">Done</text>
+    <rect x="80" y="310" width="10" height="10" rx="2" fill="#f57c00"/>
+    <text x="94" y="319" font-size="10" fill="#666">Next</text>
+    <rect x="140" y="310" width="10" height="10" rx="2" fill="#283593"/>
+    <text x="154" y="319" font-size="10" fill="#666">Build</text>
+    <rect x="200" y="310" width="10" height="10" rx="2" fill="#6a1b9a"/>
+    <text x="214" y="319" font-size="10" fill="#666">Test setup</text>
+    <rect x="280" y="310" width="10" height="10" rx="2" fill="#1565c0"/>
+    <text x="294" y="319" font-size="10" fill="#666">Test + UAT</text>
+  </svg>
+
   <div class="callout" style="background: #f5f5f5; border-left: 4px solid #1a1a2e; margin-top: 16px;">
-    <strong>Critical path:</strong> CE endpoint build (Gilles' team). Commercial, regulatory, architecture, and ops are all aligned. The remaining blocker is project ownership, funding, and getting Gilles' team resourced to build. Aligning with Discover replacement (Moritz/Dave) to combine requirements — one build, two consumers.
+    <strong>Critical path:</strong> CE endpoint build (Gilles' team). Commercial, regulatory, architecture, and ops are all aligned. Remaining: squad formation, funding, and CE build. Integration testing requires test accounts with real product holdings in ICOMS, eBP, and Billing test environments — package changes are irreversible write actions, not read-only diagnostics. Target go-live: <strong>February 2027</strong>.
   </div>
 
   <div class="slide-footer">Package Change — Stakeholder Update | Sep 2026</div>
